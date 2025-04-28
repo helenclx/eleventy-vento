@@ -1,0 +1,20 @@
+---
+layout: layouts/base
+---
+<ul>
+    <li>Date: {{ date |> formatDate }}</li>
+    {{ if updated }}
+    <li>Updated: {{ updated |> formatDate }}</li>
+    {{ /if }}
+</ul>
+
+{{ content }}
+
+<hr>
+{{ set previousPost = collections.posts |> getPreviousCollectionItem }}
+{{ set nextPost = collections.posts |> getNextCollectionItem }}
+<h2>Next and Previous Posts</h2>
+<ul>
+{{ if previousPost }}<li>Previous Blog Post: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>{{ /if }}
+{{ if nextPost }}<li>Next Blog Post: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>{{ /if }}
+</ul>
