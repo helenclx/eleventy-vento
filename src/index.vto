@@ -9,3 +9,8 @@ title: Vento Test Home
     <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
     {{ /for }}
 </ul>
+
+<h2>Paired Shortcode</h2>
+{{ container "section", "section-class", "section-id" }}
+<p>This container element was created using Eleventy's paired shortcode in Vento.</p>
+{{ /container }}
