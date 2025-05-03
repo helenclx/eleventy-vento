@@ -18,3 +18,7 @@ title: Vento Test Home
 {{ container "section", "section-class", "section-id" }}
 <p>This container element was created using Eleventy's paired shortcode in Vento.</p>
 {{ /container }}
+
+{{ layout "partials/article.vto" }}
+<p>This is an article partial included via the <code>{{ echo }}{{ layout }}{{ /echo }}</code> tag.</p>
+{{ /layout }}
