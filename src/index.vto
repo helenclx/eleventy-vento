@@ -20,5 +20,6 @@ title: Vento Test Home
 {{ /container }}
 
 {{ layout "partials/article.vto" }}
+{{ set partialVar }}<p>This is a block variable in a layout.</p>{{ /set }}
 <p>This is an article partial included via the <code>{{ echo }}{{ layout }}{{ /echo }}</code> tag.</p>
 {{ /layout }}
