@@ -6,6 +6,8 @@ title: Vento Test Home
 <p>Imported variable value: {{ message = "This is a new message proving imported variable can be changed" }}</p>
 <p>Imported block variable value: {{ messageTwo = " This is a new value for block variable" }}</p>
 
+{{ include "partials/section.vto" }}
+
 <h2>Posts</h2>
 {{ set postCollection = collections.posts }}
 <ul>
