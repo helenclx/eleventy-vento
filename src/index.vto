@@ -2,6 +2,9 @@
 layout: layouts/base
 title: Vento Test Home
 ---
+{{ import { message } from "layouts/base.vto" }}
+<p>Imported data: {{ message = "This is a new message proving imported variable can be changed" }}</p>
+
 <h2>Posts</h2>
 {{ set postCollection = collections.posts }}
 <ul>

@@ -7,10 +7,13 @@
         <title>Eleventy Vento Test</title>
     </head>
     <body>
+        {{ export message = "Hello, world!" }}
         <header>
             <h1>{{ title }}</h1>
         </header>
         <main>
+            <h2>Vento Import and Export</h2>
+            <p>Exported value: {{ message }}</p>
            {{ content }}
         </main>
     </body>
